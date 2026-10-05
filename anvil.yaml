@@ -5,6 +5,10 @@ native_deps:
       .anvil-panel-section-container { padding: 0 15px; }
     </style>
 runtime_options:
-  client_version: '2'
   server_spec: {}
-  version: 2
+  server_version: python3-sandbox
+services:
+- client_config: {enable_v2: true}
+  server_config: {}
+  source: /runtime/services/tables.yml
+startup_form: Form1
